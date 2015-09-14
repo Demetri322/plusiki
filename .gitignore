@@ -1,28 +1,62 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+#include "stdafx.h"
+#include "iostream"
+#include "string"
+using namespace std;
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "Russian");
+	cout << "Мини игрушка, написал за минут 10, автор Осипов Д. На вопросы отвечать da/net, так же net завершает игру.\n";
+	cout << "Для продолжения нажмите Enter, епта\n";
+	cin.get();
+	string osen;
+	cout << "1. Осень пришла?\n";
+	cin >> osen;
+	if (osen == "da")
+	{
+		cout << "-------------------------------\n";
+		cout << "МОЯ ЖОПА ЗАЦВЕЛА))))))))))))\n";
+		cout << "-------------------------------\n";
+	}
+	if (osen == "net")
+	{
+		cout << "-------------------------------\n";
+		cout << "ПИДОРА ОТВЕТ)))))))))))))))Начинай игру заново!\n";
+		cout << "-------------------------------\n";
+	}
+	string zhara;
+	cout << "2. Что-то жарко стало, да?\n";
+	cin >> zhara;
+	if (zhara == "da")
+	{
+		cout << "-------------------------------\n";
+		cout << "МИЛАЯ МОЯ ДАВАЙ ПОЕБЕМСЯ)))))))\n";
+		cout << "-------------------------------\n";
+	}
+	if (zhara == "net")
+	{
+		cout << "-------------------------------\n";
+		cout << "ПИДОРА ОТВЕТ)0)0)00))Начинай игру заново!\n";
+		cout << "-------------------------------\n";
+	}
 
-# Precompiled Headers
-*.gch
-*.pch
+	string nomer;
+	cout << "3. Я буду для тебя номером один, правильно?\n";
+	cin >> nomer;
+	if (nomer == "da")
+	{
+		cout << "-------------------------------\n";
+		cout << "НЕПРАВИЛЬНО ОТВЕЧАЕШЬ, ПИДРИЛА! Начинай игру заново!\n";
+		cout << "-------------------------------\n";
+	}
+	if (nomer == "net")
+	{
+		cout << "-------------------------------\n";
+		cout << "ПРАВИЛЬНО СТЕЛИШЬ ФРАЕРОК ЕПТА\n";
+		cout << "-------------------------------\n";
+	}
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+	cin.get();
+	system("pause");
+	return 0;
+}
 
-# Fortran module files
-*.mod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
